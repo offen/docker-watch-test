@@ -6,6 +6,7 @@ services:
     working_dir: /app
     environment:
       PORT: 9955
+      CHOKIDAR_USEPOLLING: '1'
     volumes:
       - ./app:/app
       - deps:/app/node_modules
