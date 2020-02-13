@@ -7,7 +7,7 @@ services:
     environment:
       PORT: 9955
     volumes:
-      - .:/app
+      - ./app:/app
       - deps:/app/node_modules
     command: npm start
     ports:
